@@ -9,7 +9,7 @@ const Clinic_TabPage: React.FunctionComponent = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>病院</IonTitle>
+          <IonTitle>クリニック</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent />

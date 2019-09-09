@@ -19,7 +19,7 @@ import Menu from './components/Menu';
 import List from './pages/List';
 // 
 import { IonReactRouter } from '@ionic/react-router';
-import { home, clock, medkit, clipboard, list } from 'ionicons/icons';
+import { home, clock, medkit, clipboard, logOut, list } from 'ionicons/icons';
 import Home_Tab from './pages/Home_Tab';
 import Reservation_Tab from './pages/Reservation_Tab';
 import Clinic_Tab from './pages/Clinic_Tab';
@@ -45,6 +45,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+//sidemenuのルーティングセットを用意
 const appPages: AppPage[] = [
   {
     title: 'ホーム',
@@ -52,10 +53,28 @@ const appPages: AppPage[] = [
     icon: home
   },
   {
-    title: 'リストtest',
+    title: '予約',
+    url: '/reservation_tab',
+    icon: clock
+  },
+  {
+    title: 'クリニック',
+    url: '/clinic_tab',
+    icon: medkit
+  },   
+  {
+    title: '明細',
+    url: '/details_tab',
+    icon: clipboard
+  },   {
+    title: 'ログアウト',
+    url: '/home_tab',
+    icon: logOut
+  },   {
+    title: 'List(test)',
     url: '/home_tab/list',
     icon: list
-  }
+  },  
 ];
 
 const App: React.FunctionComponent = () => (
@@ -88,7 +107,7 @@ const App: React.FunctionComponent = () => (
               </IonTabButton>
               <IonTabButton tab="Clinic_tab" href="/Clinic_tab">
                 <IonIcon icon={medkit} />
-                <IonLabel>病院</IonLabel>
+                <IonLabel>クリニック</IonLabel>
               </IonTabButton>
               <IonTabButton tab="Details_tab" href="/Details_tab">
                 <IonIcon icon={clipboard} />
