@@ -16,14 +16,14 @@ import {
   } from '@ionic/react';
 import { book, build, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
-import './Tab1.css';
+import './Insurance_Tab.css';
 
-const Tab1: React.FunctionComponent = () => {
+const Insurance_Tab: React.FunctionComponent = () => {
   return (
     <>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab One</IonTitle>
+          <IonTitle>保険</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -67,4 +67,4 @@ const Tab1: React.FunctionComponent = () => {
   );
 };
 
-export default Tab1;
+export default Insurance_Tab;
