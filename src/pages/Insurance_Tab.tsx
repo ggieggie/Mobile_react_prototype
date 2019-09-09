@@ -23,7 +23,7 @@ const Insurance_Tab: React.FunctionComponent = () => {
     <>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>保険</IonTitle>
+          <IonTitle>ホーム</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>

@@ -11,7 +11,7 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { apps, flash, send, card, clock, medkit, clipboard } from 'ionicons/icons';
+import { home, apps, flash, send, card, clock, medkit, clipboard } from 'ionicons/icons';
 import Insurance_Tab from './pages/Insurance_Tab';
 import Reservation_Tab from './pages/Reservation_Tab';
 import Clinic_Tab from './pages/Clinic_Tab';
@@ -52,8 +52,8 @@ const App: React.FunctionComponent = () => (
           </IonRouterOutlet>
           <IonTabBar slot="bottom">
             <IonTabButton tab="Insurance_tab" href="/Insurance_tab">
-              <IonIcon icon={card} />
-              <IonLabel>保険</IonLabel>
+              <IonIcon icon={home} />
+              <IonLabel>ホーム</IonLabel>
             </IonTabButton>
             <IonTabButton tab="Reservation_tab" href="/Reservation_tab">
               <IonIcon icon={clock} />
