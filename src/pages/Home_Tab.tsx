@@ -1,4 +1,5 @@
 import {
+  IonButtons,
   IonCard,
   IonCardContent,
   IonCardHeader,
@@ -11,18 +12,22 @@ import {
   IonLabel,
   IonList,
   IonListHeader,
+  IonMenuButton,
   IonTitle,
   IonToolbar
   } from '@ionic/react';
 import { book, build, colorFill, grid } from 'ionicons/icons';
 import React from 'react';
-import './Insurance_Tab.css';
+import './Home_Tab.css';
 
-const Insurance_Tab: React.FunctionComponent = () => {
+const Home_Tab: React.FunctionComponent = () => {
   return (
     <>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot="start">
+            <IonMenuButton />
+          </IonButtons>
           <IonTitle>ホーム</IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -67,4 +72,4 @@ const Insurance_Tab: React.FunctionComponent = () => {
   );
 };
 
-export default Insurance_Tab;
+export default Home_Tab;
