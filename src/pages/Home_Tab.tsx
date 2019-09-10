@@ -14,13 +14,19 @@ import {
   IonListHeader,
   IonMenuButton,
   IonTitle,
-  IonToolbar
+  IonToolbar,
+  IonButton,
+  IonModal,
+  IonInput
   } from '@ionic/react';
 import { book, build, colorFill, grid } from 'ionicons/icons';
-import React from 'react';
+import React, { useState }  from 'react';
 import './Home_Tab.css';
+import Modal from './Modal';
 
 const Home_Tab: React.FunctionComponent = () => {
+  const [showAnime, setShowAnime] = useState(true);
+  const [showModal, setShowModal] = useState(true);
   return (
     <>
       <IonHeader>
@@ -47,6 +53,33 @@ const Home_Tab: React.FunctionComponent = () => {
             </p>
           </IonCardContent>
         </IonCard>
+
+        <IonModal animated={showAnime} isOpen={showModal} >
+          <IonHeader>
+              <IonToolbar>
+                  <IonTitle>CF mobile app test</IonTitle>
+              </IonToolbar>
+          </IonHeader> 
+          <div className="ion-text-center">
+              <img src="/assets/free-hospital.jpg" alt="" width="30%" />
+          </div>
+          <h1 className="ion-text-center conduit-title">仮ログイン画面</h1>   
+          <IonCardContent>
+            <p>
+              Now that your app has been created, you'll want to start building out features and
+              components. Check out some of the resources below for next steps.
+            </p>
+          </IonCardContent>  
+        　<form action="">
+            <IonItem>   
+                <IonInput type="text" placeholder="Username"></IonInput>
+            </IonItem>
+            <IonItem>
+                <IonInput type="password" placeholder="Password"></IonInput>      
+            </IonItem>
+        　</form>      
+        　<IonButton expand="full" onClick={() => setShowModal(false) } color="danger">ログイン </IonButton>
+        </IonModal>
 
         <IonList lines="none">
           <IonListHeader>
