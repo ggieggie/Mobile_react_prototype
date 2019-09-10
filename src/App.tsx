@@ -15,9 +15,10 @@ import {
 // add sidemenu
 import { AppPage } from './declarations';
 import Menu from './components/Menu';
-//import Home from './pages/Home';
 import List from './pages/List';
-// 
+// add login
+// import Login from './pages/Login';
+// add tabs
 import { IonReactRouter } from '@ionic/react-router';
 import { home, clock, medkit, clipboard, logOut, list } from 'ionicons/icons';
 import Home_Tab from './pages/Home_Tab';
@@ -85,6 +86,7 @@ const App: React.FunctionComponent = () => (
         <IonPage id="main">
           <IonTabs>
             <IonRouterOutlet>
+              <Route exact path="/" render={() => <Redirect to="/Home_tab" />} />
               <Route path="/:tab(home_tab)" component={Home_Tab} exact={true} />
               <Route path="/:tab(reservation_tab)" component={Reservation_Tab} exact={true} />
               <Route path="/:tab(reservation_tab)/Details" component={Details} />
@@ -94,7 +96,6 @@ const App: React.FunctionComponent = () => (
               <Route path="/:tab(reservation_tab)/list" component={List} exact={true} />
               <Route path="/:tab(clinic_tab)/list" component={List} exact={true} />
               <Route path="/:tab(details_tab)/list" component={List} exact={true} />
-              <Route exact path="/" render={() => <Redirect to="/Home_tab" />} />
             </IonRouterOutlet>
             <IonTabBar slot="bottom">
               <IonTabButton tab="Home_tab" href="/Home_tab">

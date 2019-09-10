@@ -33,10 +33,12 @@ const Home_Tab: React.FunctionComponent = () => {
       </IonHeader>
       <IonContent>
         <IonCard className="welcome-card">
-          <img src="/assets/shapes.svg" alt=""/>
+          <img src="/assets/tamachi.png" alt=""/>
           <IonCardHeader>
-            <IonCardSubtitle>Get Started</IonCardSubtitle>
-            <IonCardTitle>Welcome to Ionic</IonCardTitle>
+            <IonCardSubtitle>クリニックフォアID</IonCardSubtitle>
+            <IonCardTitle>0001234567</IonCardTitle>
+            <IonCardSubtitle>田町院の診察番号</IonCardSubtitle>
+            <IonCardTitle>00１-1234567</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
             <p>
@@ -48,23 +50,23 @@ const Home_Tab: React.FunctionComponent = () => {
 
         <IonList lines="none">
           <IonListHeader>
-            <IonLabel>Resources</IonLabel>
+            <IonLabel>お知らせ＆イベント情報</IonLabel>
           </IonListHeader>
           <IonItem href="https://ionicframework.com/docs/" target="_blank">
             <IonIcon slot="start" color="medium" icon={book} />
-            <IonLabel>Ionic Documentation</IonLabel>
+            <IonLabel>あああああ</IonLabel>
           </IonItem>
           <IonItem href="https://ionicframework.com/docs/building/scaffolding" target="_blank">
             <IonIcon slot="start" color="medium" icon={build} />
-            <IonLabel>Scaffold Out Your App</IonLabel>
+            <IonLabel>いいいいい</IonLabel>
           </IonItem>
           <IonItem href="https://ionicframework.com/docs/layout/structure" target="_blank">
             <IonIcon slot="start" color="medium" icon={grid} />
-            <IonLabel>Change Your App Layout</IonLabel>
+            <IonLabel>ううううう</IonLabel>
           </IonItem>
           <IonItem href="https://ionicframework.com/docs/theming/basics" target="_blank">
             <IonIcon slot="start" color="medium" icon={colorFill} />
-            <IonLabel>Theme Your App</IonLabel>
+            <IonLabel>えええええ</IonLabel>
           </IonItem>
         </IonList>
       </IonContent>
