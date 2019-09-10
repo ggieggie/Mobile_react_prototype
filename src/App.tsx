@@ -16,9 +16,6 @@ import {
 import { AppPage } from './declarations';
 import Menu from './components/Menu';
 import List from './pages/List';
-// add login
-import Login from './pages/Login';
-import Modal from './pages/Modal';
 // add tabs
 import { IonReactRouter } from '@ionic/react-router';
 import { home, clock, medkit, clipboard, logOut, list } from 'ionicons/icons';
@@ -70,7 +67,7 @@ const appPages: AppPage[] = [
     icon: clipboard
   },   {
     title: 'ログアウト',
-    url: '/Login',
+    url: '/Home_tab',
     icon: logOut
   },   {
     title: 'List(test)',
@@ -88,8 +85,6 @@ const App: React.FunctionComponent = () => (
           <IonTabs>
             <IonRouterOutlet>
               <Route exact path="/" render={() => <Redirect to="/Home_tab" />} />
-              <Route path="/login" component={Login} exact={true} />
-              <Route path="/blog" component={Modal} exact={true} />
               <Route path="/:tab(home_tab)" component={Home_Tab} exact={true} />
               <Route path="/:tab(reservation_tab)" component={Reservation_Tab} exact={true} />
               <Route path="/:tab(reservation_tab)/Details" component={Details} />

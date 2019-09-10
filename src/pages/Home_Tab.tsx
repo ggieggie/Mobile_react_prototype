@@ -22,7 +22,6 @@ import {
 import { book, build, colorFill, grid } from 'ionicons/icons';
 import React, { useState }  from 'react';
 import './Home_Tab.css';
-import Modal from './Modal';
 
 const Home_Tab: React.FunctionComponent = () => {
   const [showAnime, setShowAnime] = useState(true);
